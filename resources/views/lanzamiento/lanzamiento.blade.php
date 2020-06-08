@@ -13,4 +13,17 @@
 <br>
 {{$noticia['contenido']}}
 </div>
+<div style="background-color: red" class="text-center">
+	<form method="POST" action="{{ route('subscripciones.store')}}">
+	  @csrf
+	  @method('POST')
+	  	Desea suscribirse a este contenido? 
+		<input type="text" name="correo">
+		<input type="text" name="seccion" value="lanzamientos" hidden="true">
+		<input type="text" name="id" value="{{$noticia -> id}}" hidden="true">
+		<button type="submit" onclick="alerta()">Suscribirme</button>
+	</form>
+
+</div>
+<br><br>
 @endsection

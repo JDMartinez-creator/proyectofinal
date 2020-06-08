@@ -22,7 +22,7 @@
 	  @method('POST')
 	  	Desea suscribirse a este contenido? 
 		<input type="text" name="correo">
-		<input type="text" name="seccion" value="noticia" hidden="true">
+		<input type="text" name="seccion" value="noticias" hidden="true">
 		<input type="text" name="id" value="{{$noticia -> id}}" hidden="true">
 		<button type="submit" onclick="alerta()">Suscribirme</button>
 	</form>
