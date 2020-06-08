@@ -13,7 +13,7 @@ class CreateNoticiasTable extends Migration
      */
     public function up()
     {
-        Schema::create('noticias', function (Blueprint $table) {
+        Schema::create('noticia', function (Blueprint $table) {
             $table->increments('id');
             $table->text('introduccion')->nullable();
             $table->text('titulo')->nullable();

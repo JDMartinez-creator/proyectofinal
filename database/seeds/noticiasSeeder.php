@@ -14,14 +14,14 @@ class noticiasSeeder extends Seeder
      */
     public function run()
     {
-          DB::table('noticias')->insert([
+          DB::table('noticia')->insert([
             'titulo' => 'Streets of Rage 4: Así es Como Tres Estudios Revivieron la Legendaria Serie',
             'introduccion' => 'Esta es una frase que no pensé estar escribiendo en 2020: hoy tendremos el lanzamiento de un nuevo juego de Streets of Rage',
             'contenido' => '¿Por qué la sorpresa? No es solo porque han pasado 26 años desde el último título, sino porque la trilogía original de los side-scrolling beat ‘em up fue una luz en una botella, celebrada perfectamente en su época, y ha sido venerada por seguidores del género desde entonces. ¿Por qué un estudio de la actualidad esperaría resucitar la serie? ¿Cómo podría capturar esa magia?',
             'fecha' =>  '2020-04-20',
             'user_id' => 4,
         ]);
-        DB::table('noticias')->insert([
+        DB::table('noticia')->insert([
             'titulo' => 'Bullets Per Minute anunciado para Xbox One, dispara al ritmo de la música',
             'introduccion' => 'El estudio británico Awe ha anunciado el lanzamiento de Bullets Per Minute para este verano en PC y en invierno para consolas',
             'contenido' => 'Sus creadores lo definen como un «shooter en primera persona de acción rítmica roguelike», donde la acción va a ritmo de la música mientras acabas con cientos de enemigos y jefes finales en una estructura de mazmorras generadas de manera aleatoria.
