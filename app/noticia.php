@@ -8,4 +8,6 @@ class noticia extends Model
 {
     protected $table = 'noticia';
     public $timestamps = false;
+    protected $fillable = ['introduccion','titulo','contenido','fecha','user_id'];
+    
 }

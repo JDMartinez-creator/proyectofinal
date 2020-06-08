@@ -8,4 +8,5 @@ class pendiente extends Model
 {
     protected $table = 'pendientes';
     public $timestamps = false;
+    protected $fillable = ['introduccion','titulo','contenido','fecha','seccion','user_id'];
 }
