@@ -16,6 +16,7 @@ class CreateSubscripcionesTable extends Migration
         Schema::create('subscripciones', function (Blueprint $table) {
             $table->increments('id');
             $table->text('correo')->nullable();
+            $table->text('seccion') -> nullable();
             $table->integer('contenido_id')->nullable();
         });
     }

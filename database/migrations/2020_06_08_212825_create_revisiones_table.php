@@ -20,6 +20,7 @@ class CreateRevisionesTable extends Migration
             $table->text('contenido')->nullable();
             $table->dateTime('fecha')->nullable();
             $table->string('seccion')->nullable();
+            $table->string('asunto')->nullable();
             $table->integer('user_id')->nullable();
         });
     }
